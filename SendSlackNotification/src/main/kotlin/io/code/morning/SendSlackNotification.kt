@@ -18,7 +18,7 @@ class SendSlackNotification : RequestHandler<Any, Any> {
 
     fun sendSlackMessage() {
         val mapper = jacksonObjectMapper()
-        val webhookUrl: String = "https://hooks.slack.com/services/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"
+        val webhookUrl: String = "https://hooks.slack.com/services/xxx/xxx/xxx"
         val body: String = mapper.writeValueAsString(SlackMessage(
                 text = "Hello Lambda"
         ))
